@@ -1,0 +1,167 @@
+﻿<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <xsd:annotation>
+    <xsd:documentation xml:lang="pl">
+      Zespoły
+    </xsd:documentation>
+  </xsd:annotation>
+
+  <xsd:attributeGroup name="atrybuty">
+    <xsd:attribute name="nazwa" type="nazwa_typ" />
+  </xsd:attributeGroup>
+
+  <xsd:element name="zespoly" type="zespoly_typ"/>
+
+  <xsd:simpleType name="imie_nazwisko_typ">
+    <xsd:restriction base="xsd:string">
+      <xsd:minLength value="2"/>
+      <xsd:maxLength value="24"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="nazwa_typ">
+    <xsd:restriction base="xsd:string">
+      <xsd:minLength value="1"/>
+      <xsd:maxLength value="32"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="kraj_typ">
+    <xsd:restriction base="xsd:string">
+      <xsd:minLength value="3"/>
+      <xsd:maxLength value="64"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="gatunek_typ">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="rock"/>
+      <xsd:enumeration value="alternative"/>
+      <xsd:enumeration value="indie rock"/>
+      <xsd:enumeration value="funk"/>
+      <xsd:enumeration value="punk"/>
+      <xsd:enumeration value="jazz"/>
+      <xsd:enumeration value="indie"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="glos_typ">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="falset"/>
+      <xsd:enumeration value="baryton"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="instrumenty_typ">
+    <xsd:list>
+      <xsd:simpleType>
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="trąbka"/>
+          <xsd:enumeration value="gitara_basowa"/>
+          <xsd:enumeration value="perkusja"/>
+          <xsd:enumeration value="wokal"/>
+          <xsd:enumeration value="gitara"/>
+          <xsd:enumeration value="fortepian"/>
+          <xsd:enumeration value="klawisze"/>
+          <xsd:enumeration value="harmonijka"/>
+        </xsd:restriction>                  
+      </xsd:simpleType>               
+    </xsd:list>
+  </xsd:simpleType>
+  
+  <xsd:element name="gatunki">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="gatunek" type="gatunek_typ" maxOccurs="unbounded" />
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:complexType name="zespoly_typ">
+    <xsd:sequence>
+      <xsd:element name="zespol" type="zespol_typ" maxOccurs="unbounded" />
+    </xsd:sequence>
+  </xsd:complexType>
+  
+  <xsd:complexType name="zdjecie_typ">
+    <xsd:all>
+      <xsd:element name="img">
+        <xsd:complexType>
+          <xsd:attribute name="src" type="xsd:string" />
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:all>
+  </xsd:complexType>
+
+  <xsd:complexType name="link_typ">
+    <xsd:sequence>
+      <xsd:element name="a">
+        <xsd:complexType>
+          <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+              <xsd:attribute name="href" type="xsd:string" use="required" />
+            </xsd:extension>
+          </xsd:simpleContent>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="typy_glosu_typ">
+    <xsd:sequence>
+      <xsd:element name="typ_glosu" type="glos_typ" maxOccurs="unbounded" />
+    </xsd:sequence>
+  </xsd:complexType>
+  
+  <xsd:complexType name="zespol_typ">
+    <xsd:sequence>
+      <xsd:element name="zdjecie" type="zdjecie_typ"/>
+      <xsd:element name="link" type="link_typ"/>
+      <xsd:element name="czlonek" type="czlonek_typ" maxOccurs="unbounded" />
+    </xsd:sequence>
+    <xsd:attribute name="gatunek" type="gatunek_typ"/>
+    <xsd:attribute name="kraj" type="kraj_typ"/>
+    <xsd:attributeGroup ref="atrybuty" />
+  </xsd:complexType>
+
+  <xsd:complexType name="czlonek_typ">
+    <xsd:sequence>
+      <xsd:element name="imie" type="imie_nazwisko_typ"/>
+      <xsd:element name="nazwisko" type="imie_nazwisko_typ"/>
+      <xsd:element name="pseudonim" minOccurs="0">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:minLength value="2"/>
+						<xsd:maxLength value="20"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element name="data_urodzenia" type="xsd:date"/>
+      <xsd:element name="miejsce_urodzenia">
+      <xsd:complexType>
+        <xsd:simpleContent>
+          <xsd:extension base="xsd:string">
+            <xsd:attribute name="kraj" type="kraj_typ" />
+          </xsd:extension>
+        </xsd:simpleContent>
+      </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="instrumenty" type="instrumenty_typ"/>
+      <xsd:element name="typy_glosu" type="typy_glosu_typ" minOccurs="0" />
+      <xsd:element ref="gatunki" minOccurs="0" />
+      <xsd:element name="aktywny_od" minOccurs="0">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:integer">
+            <xsd:minInclusive value="1900"/>
+            <xsd:maxInclusive value="2016"/>
+          </xsd:restriction>                  
+        </xsd:simpleType>
+      </xsd:element>
+    </xsd:sequence>
+    <xsd:attributeGroup ref="atrybuty" />
+  </xsd:complexType>
+
+</xsd:schema>
+
+
+

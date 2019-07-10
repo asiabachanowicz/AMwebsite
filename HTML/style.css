@@ -1,0 +1,188 @@
+body {
+	background-color: #1a1a1a;
+}
+
+.container {
+	width: 800px;
+	height: 100vh;
+	background-color: black;
+	margin: 0px auto;
+	font-family: Calibri, Helvetica, Arial;
+	color: white;
+	letter-spacing: -1px;
+	opacity: 0.9;
+}
+
+.top {
+	width: 800px;
+	height: 202px;
+	margin: auto;
+	background-image: url("img/logo.jpg");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.menu {
+	width: 100%;
+	background-color: black;
+	margin: auto;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: bold;
+}
+
+.content {
+	background-color: black;
+	margin: auto;
+	text-align: justify;
+	padding: 20px;
+}
+
+.footer {
+	width: 100%;
+	background-color: black;
+	margin: auto;
+	text-align: center;
+	font-size: 12px;
+	letter-spacing: 0px;
+	text-transform: uppercase;
+}
+
+a {
+	color: silver;
+	text-decoration: none;
+}
+
+a:hover {
+	color: white;
+}
+
+.menu > ul {
+	list-style-type: none;
+	margin: auto;
+	padding: 10px;
+	overflow: hidden;
+}
+
+.sub-menu {
+	font-weight: normal;
+}
+
+.menu > ul > li {
+	display: block;
+	float: left;
+	text-align: center;
+	padding-right: 20px;
+}
+
+.members {
+	border: none;
+}
+
+h1 {
+	text-transform: uppercase;
+}
+
+td > img {
+	width: 200px;
+}
+
+td {
+	vertical-align: top;
+	margin: 10px;
+	text-align: left;
+}
+
+td > p {
+	margin-top: 0px;
+}
+
+.albums {
+	border: 1px solid silver;
+	border-collapse: collapse;
+}
+
+.albums tr, .albums td, .albums th {
+	border: 1px solid silver;
+	border-collapse: collapse;
+}
+
+.cover {
+	display: block;
+	margin: auto;
+}
+
+tr > th > p {
+	text-align: center;
+	font-size: 22px;
+}
+
+table.gallery {
+	width: 100%;
+}
+
+input[type=text], textarea {
+    width: 100%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+}
+
+input[type=text]:focus, textarea:focus {
+    background-color: silver;
+}
+
+.message {
+	height: 300px;
+}
+
+#buttons {
+	text-align: center;
+}
+
+.button {
+    background-color: silver;
+    border: none;
+    color: black;
+    padding: 5px 5px;
+	font-family: Calibri, Arial;
+    text-align: center;
+    text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+    display: inline-block;
+    font-size: 14px;
+	margin: 5px 5px 0px 5px;
+}
+
+.button:hover {
+	background-color: white;
+}
+
+.photo {
+	width: 300px;
+}
+
+form p, form + p {
+	font-weight: bold;
+	margin-bottom: 2px;
+}
+
+.gramophone {
+	background-color: white;
+	background-image: url("img/gramophone.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 600px;
+	height: 400px;
+	margin: auto;
+}
+
+.gramophone img {
+	width: 300px;
+	margin: 50px 0 0 108px;
+    animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+	100% { transform:rotate(360deg); }
+}

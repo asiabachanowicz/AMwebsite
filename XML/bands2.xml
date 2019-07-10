@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<zespoly>
+	<zespol nazwa="Muse" gatunek="rock" kraj="Anglia">
+		<zdjecie> 
+			<img src="http://i15.photobucket.com/albums/a369/0oDarthTofuo0/muse/Wallpapers/muse2.jpg"/>
+		</zdjecie>
+		<link>
+          <a href="http://muse.mu/">Strona</a>
+        </link>
+		<czlonek nazwa="Matt">
+			<imie>Matthew</imie>
+			<nazwisko>Bellamy</nazwisko>
+			<data_urodzenia>1978-06-09</data_urodzenia>
+			<miejsce_urodzenia kraj="Anglia">Cambridge</miejsce_urodzenia>
+			<instrumenty>gitara klawisze wokal</instrumenty>
+			<gatunki>
+				<gatunek>indie rock</gatunek>
+				<gatunek>rock</gatunek>
+				<gatunek>alternative</gatunek>
+			</gatunki>
+			<aktywny_od>1994</aktywny_od>
+		</czlonek>
+		<czlonek nazwa="ChrisW">
+			<imie>Christopher</imie>
+			<nazwisko>Wolstenholme</nazwisko>
+			<data_urodzenia>1978-12-02</data_urodzenia>
+			<miejsce_urodzenia kraj="Anglia">Rotherham</miejsce_urodzenia>
+			<instrumenty>gitara_basowa harmonijka</instrumenty>
+			<gatunki>
+				<gatunek>indie rock</gatunek>
+				<gatunek>alternative</gatunek>
+			</gatunki>
+			<aktywny_od>1992</aktywny_od>
+		</czlonek>
+		<czlonek nazwa="Dom">
+			<imie>Dominic</imie>
+			<nazwisko>Howard</nazwisko>
+			<pseudonim>Dom</pseudonim>
+			<data_urodzenia>1977-12-07</data_urodzenia>
+			<miejsce_urodzenia kraj="Anglia">Stockport</miejsce_urodzenia>
+			<instrumenty>perkusja</instrumenty>
+			<gatunki>
+				<gatunek>indie rock</gatunek>
+				<gatunek>alternative</gatunek>
+			</gatunki>
+			<aktywny_od>1988</aktywny_od>
+		</czlonek>
+	</zespol>
+	<zespol nazwa="Red Hot Chili Peppers" gatunek="rock" kraj="USA">
+		<zdjecie> 
+			<img src="https://consequenceofsound.files.wordpress.com/2016/05/red-hot-chili-peppers-dark-necessities-single-new-mp3.png"/>
+		</zdjecie>
+		<link>
+          <a href="http://redhotchilipeppers.com/go-robot">Strona</a>
+        </link>
+		<czlonek nazwa="Anthony">
+			<imie>Anthony</imie>
+			<nazwisko>Kiedis</nazwisko>
+			<pseudonim>Tony</pseudonim>
+			<data_urodzenia>1962-11-01</data_urodzenia>
+			<miejsce_urodzenia kraj="USA">Grand Rapids</miejsce_urodzenia>
+			<instrumenty>wokal</instrumenty>
+			<aktywny_od>1983</aktywny_od>
+		</czlonek>
+		<czlonek nazwa="Josh">
+			<imie>Josh</imie>
+			<nazwisko>Klinghoffer</nazwisko>
+			<data_urodzenia>1979-10-03</data_urodzenia>
+			<miejsce_urodzenia kraj="USA">Los Angeles</miejsce_urodzenia>
+			<instrumenty>gitara gitara_basowa wokal klawisze</instrumenty>
+			<gatunki>
+				<gatunek>funk</gatunek>
+				<gatunek>rock</gatunek>
+				<gatunek>alternative</gatunek>
+			</gatunki>
+			<aktywny_od>1994</aktywny_od>
+		</czlonek>
+		<czlonek nazwa="Flea">
+			<imie>Michael</imie>
+			<nazwisko>Balzary</nazwisko>
+			<pseudonim>Flea</pseudonim>
+			<data_urodzenia>1962-10-16</data_urodzenia>
+			<miejsce_urodzenia kraj="Australia">Melbourne</miejsce_urodzenia>
+			<instrumenty>gitara_basowa trąbka</instrumenty>
+			<gatunki>
+				<gatunek>rock</gatunek>
+				<gatunek>alternative</gatunek>
+				<gatunek>funk</gatunek>
+				<gatunek>punk</gatunek>
+			</gatunki>
+			<aktywny_od>1983</aktywny_od>
+		</czlonek>
+		<czlonek nazwa="Chad">
+			<imie>Chad</imie>
+			<nazwisko>Smith</nazwisko>
+			<data_urodzenia>1961-10-25</data_urodzenia>
+			<miejsce_urodzenia kraj="USA">Saint Paul</miejsce_urodzenia>
+			<instrumenty>perkusja</instrumenty>
+			<gatunki>
+				<gatunek>rock</gatunek>
+				<gatunek>jazz</gatunek>
+			</gatunki>
+		</czlonek>
+	</zespol>
+	<zespol nazwa="Coldplay" gatunek="alternative" kraj="Anglia">
+		<zdjecie> 
+			<img src="http://www.hotpress.com/store/images/adm/19/19181/19181257_coldplay.jpg"/>
+		</zdjecie>
+		<link>
+          <a href="http://coldplay.com/">Strona</a>
+        </link>
+		<czlonek nazwa="ChrisM">
+			<imie>Chris</imie>
+			<nazwisko>Martin</nazwisko>
+			<data_urodzenia>1977-03-02</data_urodzenia>
+			<miejsce_urodzenia kraj="Anglia">Exeter</miejsce_urodzenia>
+			<instrumenty>wokal gitara klawisze</instrumenty>
+			<typy_glosu>
+				<typ_glosu>falset</typ_glosu>
+				<typ_glosu>baryton</typ_glosu>
+			</typy_glosu>
+			<gatunki>
+				<gatunek>alternative</gatunek>
+				<gatunek>rock</gatunek>
+			</gatunki>
+			<aktywny_od>1996</aktywny_od>
+		</czlonek>
+		<czlonek nazwa="Jon">
+			<imie>Jonathan</imie>
+			<nazwisko>Buckland</nazwisko>
+			<data_urodzenia>1977-11-11</data_urodzenia>
+			<miejsce_urodzenia kraj="Anglia">Londyn</miejsce_urodzenia>
+			<instrumenty>gitara harmonijka</instrumenty>
+			<gatunki>
+				<gatunek>rock</gatunek>
+			</gatunki>
+		</czlonek>
+		<czlonek nazwa="Guy">
+			<imie>Guy</imie>
+			<nazwisko>Berryman</nazwisko>
+			<data_urodzenia>1978-04-12</data_urodzenia>
+			<miejsce_urodzenia kraj="Szkocja">Kirkcaldy</miejsce_urodzenia>
+			<instrumenty>gitara_basowa perkusja</instrumenty>
+			<gatunki>
+				<gatunek>alternative</gatunek>
+			</gatunki>
+			<aktywny_od>1998</aktywny_od>
+		</czlonek>
+		<czlonek nazwa="Will">
+			<imie>Will</imie>
+			<nazwisko>Champion</nazwisko>
+			<data_urodzenia>1978-07-31</data_urodzenia>
+			<miejsce_urodzenia kraj="Anglia">Southampton</miejsce_urodzenia>
+			<instrumenty>perkusja fortepian</instrumenty>
+			<gatunki>
+				<gatunek>rock</gatunek>
+			</gatunki>
+		</czlonek>
+	</zespol>
+	<zespol nazwa="The Killers" gatunek="indie" kraj="USA">
+		<zdjecie> 
+			<img src="http://alterock.net/wp-content/uploads/2016/05/Alterock-the-killers-web.jpg"/>
+		</zdjecie>
+		<link>
+          <a href="http://www.thekillersmusic.com/">Strona</a>
+        </link>
+		<czlonek nazwa="Brandon">
+			<imie>Brandon</imie>
+			<nazwisko>Flowers</nazwisko>
+			<data_urodzenia>1981-06-21</data_urodzenia>
+			<miejsce_urodzenia kraj="USA">Henderson</miejsce_urodzenia>
+			<instrumenty>wokal klawisze gitara_basowa</instrumenty>
+		</czlonek>
+		<czlonek nazwa="Dave">
+			<imie>David</imie>
+			<nazwisko>Keuning</nazwisko>
+			<data_urodzenia>1976-03-28</data_urodzenia>
+			<miejsce_urodzenia kraj="USA">Pella</miejsce_urodzenia>
+			<instrumenty>gitara</instrumenty>
+			<gatunki>
+				<gatunek>rock</gatunek>
+			</gatunki>
+		</czlonek>
+		<czlonek nazwa="Mark">
+			<imie>Mark</imie>
+			<nazwisko>Stoermer</nazwisko>
+			<data_urodzenia>1977-06-28</data_urodzenia>
+			<miejsce_urodzenia kraj="USA">Houston</miejsce_urodzenia>
+			<instrumenty>gitara_basowa trąbka</instrumenty>
+			<gatunki>
+				<gatunek>indie rock</gatunek>
+			</gatunki>
+		</czlonek>
+		<czlonek nazwa="Ronnie">
+			<imie>Ronnie</imie>
+			<nazwisko>Vannucci</nazwisko>
+			<data_urodzenia>1976-02-15</data_urodzenia>
+			<miejsce_urodzenia kraj="USA">Las Vegas</miejsce_urodzenia>
+			<instrumenty>gitara perkusja</instrumenty>
+			<gatunki>
+				<gatunek>indie rock</gatunek>
+			</gatunki>
+			<aktywny_od>2002</aktywny_od>
+		</czlonek>
+	</zespol>
+</zespoly>
